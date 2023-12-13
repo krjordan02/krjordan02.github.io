@@ -58,3 +58,26 @@
     padding-right: 9%;
     padding-left: 9%;
 }
+
+.footer-container{
+    display: grid;
+    grid-template-areas: 
+    "copyright social";
+}
+
+.copyright{
+    padding: 20px;
+}
+
+.socials{
+    justify-self: right;
+    display: grid;
+    grid-template-areas:
+    "social social social";
+    gap: 10px;
+    padding: 20px;
+}
+
+.footer-text{
+    margin: 0;
+}
