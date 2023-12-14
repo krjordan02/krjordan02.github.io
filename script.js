@@ -17,5 +17,3 @@ const addFooter = () => {
         element.appendChild(socials);
     }
 }
-
-addFooter();
