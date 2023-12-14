@@ -57,6 +57,12 @@
     color: white; 
 }
 
+#explore-button-arrow{
+    font-size: 18px;
+    padding-left: 15px;
+    color: white;
+}
+
 .footer-container{
     display: grid;
     grid-template-areas: 
