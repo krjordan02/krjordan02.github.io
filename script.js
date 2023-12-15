@@ -25,7 +25,7 @@ const addCard = (parent, title, img, info, link) => {
     '<img src="./' + img + '" alt="Project Image" class="card-img">' +
     '<p class="card-info">' + info + '</p>' +
     '<div class="explore-button-card-container">' +
-        '<a href="#' + link + '" class="explore-button">Explore<i class="bi bi-arrow-right" id="explore-button-arrow" ></i></a>' +
+        '<a href="' + link + '" class="explore-button">Explore<i class="bi bi-arrow-right" id="explore-button-arrow" ></i></a>' +
     '</div>';
     card.classList = 'card';
 
