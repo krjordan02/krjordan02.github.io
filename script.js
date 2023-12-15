@@ -17,8 +17,8 @@ const addFooter = () => {
     }
 }
 
-const addCard = (title, img, info, link) => {
-    let container = document.getElementsByClassName('project-cards-sub-container');
+const addCard = (parent, title, img, info, link) => {
+    let container = document.getElementsByClassName(parent);
 
     let card = document.createElement('div');
     card.innerHTML = '<p class="card-title">' + title + '</p>' +

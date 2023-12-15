@@ -119,10 +119,17 @@ p{
 /** Projects*/
 
 .project-cards-container{
+    background-color: rgba(11, 98, 220, 0.05);
     box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
 }
 
-.project-cards-sub-container{
+.project-title{
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    font-size: 40px;
+}
+
+.feature-project-cards-sub-container{
     margin: auto;
     width: 95%;
     display: grid;
@@ -131,7 +138,7 @@ p{
 }
 
 @media only screen and (max-width: 800px){
-    .project-cards-sub-container{
+    .feature-project-cards-sub-container{
         margin: auto;
         width: 95%;
         display: grid;
@@ -142,7 +149,7 @@ p{
 
 .card{
     margin: 8%;
-    width: 80%;
+    width: 90%;
     height: 400px;
     text-align: center;
     box-shadow:  0 0.5em 1.5em rgba(0, 0, 0, .1),  0 0.125em 0.5em rgba(0, 0, 0, .15);
@@ -150,7 +157,7 @@ p{
 }
 
 .card:hover{
-    width: 85%;
+    width: 95%;
 }
 
 .card-title{
@@ -188,3 +195,26 @@ p{
     bottom: 25px;
 }
 
+.project-cards-sub-container{
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    justify-items: center;
+}
+
+@media only screen and (max-width: 800px){
+    .project-cards-sub-container{
+        margin: auto;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+        justify-items: center;
+    }
+}
+
+.list-container-title{
+    padding-top: 22px;
+    text-align: center;
+    font-size: 25px;
+}
