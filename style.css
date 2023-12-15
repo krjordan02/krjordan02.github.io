@@ -1,12 +1,20 @@
+p{
+    margin: 0;
+}
+
+/** Home*/
+
 .landing-img{
     height: 45vw;
     max-height: 700px;
     min-height: 300px;
     object-fit: cover;
+    object-position: 0 20%;
 }
 
 .bio-title{
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     font-size: 35px;
 }
@@ -44,7 +52,7 @@
 .explore-button{
     all: unset;
     position: relative;
-    top: 38%;
+    top: 36%;
     border-radius: 7px;
     font-size: 18px;
     padding: 10px 20px;
@@ -84,12 +92,14 @@
 
 .footer-text{
     color: black;
+    font-size: 14px;
     margin: 0;
     transition: color .2s;
 }
 
 .footer-text-link{
     color: black;
+    font-size: 14px;
     margin: 0;
     transition: color .2s;
 }
@@ -105,3 +115,74 @@
 .footer-text-link:hover {
     color: gray;
 }
+
+/** Projects*/
+
+.project-cards-container{
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+
+.project-cards-sub-container{
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    justify-items: center;
+}
+
+@media only screen and (max-width: 800px){
+    .project-cards-sub-container{
+        margin: auto;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+        justify-items: center;
+    }
+}
+
+.card{
+    margin: 8%;
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    box-shadow:  0 0.5em 1.5em rgba(0, 0, 0, .1),  0 0.125em 0.5em rgba(0, 0, 0, .15);
+
+}
+
+.card-title{
+    padding: 15px;
+    font-size: 18px;
+    margin: 0;
+    
+}
+
+.card-img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 35%;
+    object-fit: cover;
+
+    box-shadow:  0 0.5em 1.5em rgba(0, 0, 0, .01),  0 0.125em 0.5em rgba(0, 0, 0, .055);
+
+}
+
+.card-info{
+    padding: 15px;
+    font-size: 15px;
+    color: grey;
+    height: 130px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore-button-card-container{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+}
+
