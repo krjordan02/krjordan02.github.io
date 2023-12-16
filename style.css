@@ -12,6 +12,24 @@ p{
     object-position: 0 20%;
 }
 
+.landing-img-title{
+    position: absolute;
+    left: 3%;
+    top: 25vw;
+    width: 30%;
+    color: white;
+}
+
+.landing-img-title-name{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.landing-img-title-info{
+    font-size: 20px;
+}
+
 .bio-title{
     margin-top: 2rem;
     margin-bottom: 0.5rem;
