@@ -18,15 +18,15 @@ const addFooter = () => {
     }
 }
 
-const addCard = (parent, title, img, info, link) => {
+const injectCard = (parent, inst) => {
     let container = document.getElementsByClassName(parent);
 
     let card = document.createElement('div');
-    card.innerHTML = '<p class="card-title">' + title + '</p>' +
-    '<img src="./' + img + '" alt="Project Image" class="card-img">' +
-    '<p class="card-info">' + info + '</p>' +
+    card.innerHTML = '<p class="card-title">' + inst.title + '</p>' +
+    '<img src="./' + inst.img + '" alt="Project Image" class="card-img">' +
+    '<p class="card-info">' + inst.info + '</p>' +
     '<div class="explore-button-card-container">' +
-        '<a href="' + link + '" class="explore-button">Explore<i class="bi bi-arrow-right" id="explore-button-arrow" ></i></a>' +
+        '<a href="' + inst.link + '" class="explore-button">Explore<i class="bi bi-arrow-right" id="explore-button-arrow" ></i></a>' +
     '</div>';
     card.classList = 'card';
 
@@ -35,3 +35,31 @@ const addCard = (parent, title, img, info, link) => {
     }
 
 }
+
+const makeCard = (title, img, info, link) => {
+    card = {title: title,
+            img: img,
+            info: info,
+            link: link};
+    cards.push(card);
+};
+
+const injectAllCards = (cards) => {
+    for(let i = 0; i < cards.length; i++){
+        injectCard('project-cards-sub-container', cards[i]);
+    }
+
+    for(let i = 0; i < 3; i++){
+        injectCard('feature-project-cards-sub-container', cards[i]);
+    }
+}
+const cards = [];
+
+makeCard('Real Time Bus Tracker', 'readMeImgBus.jpeg', 'A live bus tracker that displays the current location of all the busses in Boston.', 'https://krjordan02.github.io/Real-Time-Bus-Tracker/');
+makeCard('PackMen Exercise', 'readMeImgPacMen.jpeg', 'A PackMan generator that adds a PackMan to the web page.', 'https://krjordan02.github.io/PacMen-Exercise/');
+makeCard('Eyes Exercise', 'readMeImgEyes.jpeg', 'A pair of eyes that track and follow your mouse around the screen with their gaze.', 'https://krjordan02.github.io/Eye-Exercise/');
+makeCard('Bouncing Ball', 'readMeImgBall.jpeg', 'A ball that bounces around your screen, taking walls into consideration.', 'https://krjordan02.github.io/Bouncing-Ball/');
+
+injectAllCards(cards);
+
+addFooter();

@@ -256,7 +256,8 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 .card{
     margin: 8%;
-    width: 86%;
+    width: 85%;
+    max-width: 296px;
     height: 400px;
     text-align: center;
     box-shadow:  0 0.5em 1.5em rgba(0, 0, 0, .1),  0 0.125em 0.5em rgba(0, 0, 0, .15);
