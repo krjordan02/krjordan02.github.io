@@ -55,7 +55,7 @@ const injectAllCards = (cards) => {
 }
 const cards = [];
 
-makeCard('Real Time Bus Tracker', 'media/readMeImgBus.jpeg', 'A live bus tracker that displays the current location of all the busses in Boston.', 'https://krjordan02.github.io/Real-Time-Bus-Tracking/');
+makeCard('Real Time Bus Tracking', 'media/readMeImgBus.jpeg', 'A live bus tracker that displays the current location of all the busses in Boston.', 'https://krjordan02.github.io/Real-Time-Bus-Tracking/');
 makeCard('PackMen Exercise', 'media/readMeImgPacMen.jpeg', 'A PackMan generator that adds a PackMan to the web page.', 'https://krjordan02.github.io/PacMen-Exercise/');
 makeCard('Eyes Exercise', 'media/readMeImgEyes.jpeg', 'A pair of eyes that track and follow your mouse around the screen with their gaze.', 'https://krjordan02.github.io/Eye-Exercise/');
 makeCard('Bouncing Ball', 'media/readMeImgBall.jpeg', 'A ball that bounces around your screen, taking walls into consideration.', 'https://krjordan02.github.io/Bouncing-Ball/');
