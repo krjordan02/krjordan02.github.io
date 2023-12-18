@@ -8,6 +8,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 /** Home*/
 
+.landing-img-container{
+    position: relative;
+}
+
 .landing-img{
     height: 45vw;
     max-height: 700px;
@@ -19,7 +23,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .landing-img-title{
     position: absolute;
     left: 3%;
-    top: 25vw;
+    top: 15vw;
     width: 35%;
     color: white;
     
